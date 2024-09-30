@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+.nav-links{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    position: relative;
+    margin-left: 50px;
+}
+
+.nav-links::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-links:hover::after {
+    width: 100%;
+}
+
+.login a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    padding: 5px 10px; /* Adiciona espaço interno para a borda */
+    border: 2px solid transparent; /* Borda invisível inicialmente */
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out; /* Transição suave da borda */
+    margin-right: 9px;
+}
+
+.login a:hover {
+    border-color: white; /* Borda branca ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.2)
+    ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.banner {
+    color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.text {
+    max-width: 40%;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+strong{
+    color: #2b9b79;
+}
+
+p {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.form-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px 28px 20px 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.radio {
+    background-color: #B0B0B0; /* Cinza inicial */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* Esconde os radio buttons originais */
+.radio input[type="radio"] {
+    display: none;
+}
+
+/* Estilo quando o label associado ao radio button é clicado */
+.radio.checked {
+    background-color: #2B9B79; /* Cor quando selecionado */
+    color: white;
+}
+
+/* Estilo para hover */
+.radio:hover {
+    background-color: #9b9999; /* Cinza mais escuro ao passar o mouse */
+}
+
+input, textarea {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #1E2022;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
